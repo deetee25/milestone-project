@@ -12,3 +12,9 @@ body {
 h1 {
     text-align: center;
 }
+
+#main-container {
+    width: 252px;
+    margin: 30px auto;
+    padding: 0;
+}
