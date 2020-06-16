@@ -51,3 +51,9 @@ h1 {
   font-weight: normal;
 }
 
+@media (max-width: 768px) {
+  body { font-size: 12px; }
+  #main-container { width: 342px; }  
+  #flag-container { height: 172px; }  
+  #info-container select { font-size: 12px; font-weight: 600; }
+}
