@@ -3,3 +3,11 @@ fetch("https://restcountries.eu/rest/v2/all")
     // console.log(res.json());
     return res.json();
 })
+
+.then(function(data){
+    console.log(data);
+})
+
+.catch(function(err){
+    alert("Error:", err);
+})
