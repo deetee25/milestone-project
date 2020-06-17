@@ -6,8 +6,9 @@ fetch("https://restcountries.eu/rest/v2/all")
 
 .then(function(data){
     console.log(data);
+    initialize(data);
 })
 
 .catch(function(err){
-    alert("Error:", err);
-})
+    console.log("Error:", err);
+});
