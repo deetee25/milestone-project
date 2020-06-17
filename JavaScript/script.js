@@ -1,4 +1,8 @@
-fetch("https://restcountries.eu/rest/v2/all")
+// Global Variables
+
+let country;
+
+/* fetch("https://restcountries.eu/rest/v2/all")
 .then(function(res){
     // console.log(res.json());
     return res.json();
@@ -11,4 +15,13 @@ fetch("https://restcountries.eu/rest/v2/all")
 
 .catch(function(err){
     console.log("Error:", err);
-});
+}); */
+
+fetch("https://restcountries.eu/rest/v2/all")
+.then(res => res.json())
+.then(data => initialize(data))
+.catch(err => console.log("Error:", err));
+
+function initialize(countriseData) {
+    country = countriseData;
+}
