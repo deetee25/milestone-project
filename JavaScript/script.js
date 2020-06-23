@@ -24,4 +24,9 @@ fetch("https://restcountries.eu/rest/v2/all")
 
 function initialize(countriseData) {
     country = countriseData;
+    let options = "";
+    for(let i=0; i<country.length; i++) {
+        options += `<option value="${country[i].alpha3code}">${country[i].name}</option>`;
+    }
+    document.getElementById("country").innerHTML = options;
 }
